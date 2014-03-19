@@ -1,0 +1,223 @@
+@charset "UTF-8";
+body{background-color: #999999};
+/* Simple fluid media
+   Note: Fluid media requires that you remove the media's height and width attributes from the HTML
+   http://www.alistapart.com/articles/fluid-images/ 
+*/
+img, object, embed, video {
+	display: block;
+	margin-top: 0px;
+}
+
+/* IE 6 does not support max-width so default to width 100% */
+.ie6 img {
+	width:100%;
+}
+
+/*
+	Dreamweaver Fluid Grid Properties
+	----------------------------------
+	dw-num-cols-mobile:		6;
+	dw-num-cols-tablet:		8;
+	dw-num-cols-desktop:	12;
+	dw-gutter-percentage:	36;
+	
+	Inspiration from "Responsive Web Design" by Ethan Marcotte 
+	http://www.alistapart.com/articles/responsive-web-design
+	
+	and Golden Grid System by Joni Korpi
+	http://goldengridsystem.com/
+*/
+
+.fluid {
+	clear: both;
+	margin-left: 0;
+	width: 100%;
+	float: left;
+	display: block;
+}
+
+.fluidList {
+    list-style:none;
+    list-style-image:none;
+    margin:0;
+    padding:0;        
+}
+
+/* Mobile Layout: 480px and below. */
+  
+.gridContainer {
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	clear: none;
+	float: none;
+}
+#navIcon {
+	margin-left: 15px;
+	margin-top: 15px;
+	display: block;
+}
+#revelLogo {
+	margin-right: auto;
+	margin-left: auto;
+	display: block;
+	margin-top: 8px;
+}
+#searchIcon {
+	display: block;
+	float: right;
+	margin-top: 15px;
+	margin-right: 15px;
+}
+.navBar {
+	background-color: #FFFFFF;
+}
+.navItems {
+	margin-left: 4.6153%;
+	clear: none;
+	width: 30.2564%;
+	height: 45px;
+}
+#page1 {
+	height: 400px;
+	background-image: url(../img/page1reBG.jpg);
+	color: #000000;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+	font-style: normal;
+	font-weight: lighter;
+	background-size: contain;
+}
+.page1txt {
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+	font-weight: lighter;
+	color: #000000;
+	font-size: 24.12pt;
+	margin-right: auto;
+	margin-left: auto;
+	display: block;
+	text-align: center;
+	margin-top: 27px;
+	font-style: normal;
+}
+.page1txt2 {
+	color: #000000;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+	font-size: 15.08pt;
+	text-align: center;
+	margin-top: 23px;
+}
+.page1btn {
+	width: 214px;
+	min-width: 0px;
+	height: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 23px;
+	display: block;
+	color: #D1351B;
+	font-size: 16pt;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+	text-align: center;
+	border: 2px solid #D1351B;
+	line-height: 38pt;
+	position: relative;
+	font-weight: lighter;
+}
+.hide_mobile {
+display: none;
+}
+.page1img {
+	background-image: url(../img/page1bg.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 100%;
+	max-width: 640px;
+	height: 100%;
+	min-width: 320px;
+}
+.zeroMargin_mobile{
+	margin-left:0;
+}
+#page1BG {
+	width: 100%;
+	max-width: 640px;
+	margin-top: 30px;
+}
+/* Tablet Layout: 481px to 768px. Inherits styles from: Mobile Layout. */
+
+@media only screen and (min-width: 481px) {
+
+.gridContainer {
+	width: 87.022%;
+	padding-left: 1.4889%;
+	padding-right: 1.4889%;
+	clear: none;
+	float: none;
+	margin-left: auto;
+}
+.navBar {
+}
+.navItems {
+clear: both;
+margin-left: 0;
+width: 100%;
+}
+#page1 {
+	min-height: 0px;
+}
+.page1txt {
+}
+.page1txt2 {
+}
+.page1btn {
+}
+.page1img {
+	min-height: 0px;
+}
+.hide_tablet {
+display: none;
+}
+.zeroMargin_tablet {
+margin-left: 0;
+}
+}
+
+/* Desktop Layout: 769px to a max of 1232px.  Inherits styles from: Mobile Layout and Tablet Layout. */
+
+@media only screen and (min-width: 769px) {
+
+	.gridContainer {
+		width: 88.0147%;
+		max-width: 1232px;
+		padding-left: 0.9926%;
+		padding-right: 0.9926%;
+		margin: auto;
+		clear: none;
+		float: none;
+		margin-left: auto;
+	}
+	.navBar {
+	}
+	.navItems {
+		clear: both;
+	margin-left: 0;
+		width: 100%;
+}
+	#page1 {
+	}
+	.page1txt {
+	}
+	.page1txt2 {
+	}
+	.page1btn {
+	}
+	.page1img {
+	}
+	.zeroMargin_desktop {
+	margin-left: 0;
+	}
+	.hide_desktop {
+	display: none;
+	}
+}
