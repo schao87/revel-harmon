@@ -124,9 +124,6 @@ img, object, embed, video {
 	position: relative;
 	font-weight: lighter;
 }
-.hide_mobile {
-display: none;
-}
 .page1img {
 	background-image: url(../img/page1bg.jpg);
 	background-size: cover;
@@ -136,13 +133,55 @@ display: none;
 	height: 100%;
 	min-width: 320px;
 }
-.zeroMargin_mobile{
-	margin-left:0;
-}
 #page1BG {
 	width: 100%;
 	max-width: 640px;
 	margin-top: 30px;
+	display: block;
+}
+.zeroMargin_mobile {
+margin-left: 0;
+}
+.hide_mobile {
+display: none;
+}
+#page2 {
+	background-color: #F2EDE6;
+	display: block;
+}
+.page2Cont {
+	width: 290px;
+	height: 515px;
+	background-color: #FFFFFF;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: -50px;
+}
+.scrollDown {
+	font-style: italic;
+	display: block;
+	text-align: center;
+	margin-top: 0px;
+	width: 90px;
+	height: 52px;
+	margin-left: auto;
+	margin-right: auto;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+	color: #000000;
+}
+.gridContainer.clearfix #page2 .fluid .page2Cont .scrollDown img {
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
+.ultima2logo {
+	display: block;
+	width: 116px;
+	height: 26px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 27px;
 }
 /* Tablet Layout: 481px to 768px. Inherits styles from: Mobile Layout. */
 
@@ -174,6 +213,15 @@ width: 100%;
 }
 .page1img {
 	min-height: 0px;
+}
+#page2 {
+	margin-right: 0px;
+	display: block;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+	color: #000000;
+	font-style: italic;
+	font-size: 13pt;
+	width: auto;
 }
 .hide_tablet {
 display: none;
@@ -213,6 +261,8 @@ margin-left: 0;
 	.page1btn {
 	}
 	.page1img {
+	}
+	#page2 {
 	}
 	.zeroMargin_desktop {
 	margin-left: 0;
