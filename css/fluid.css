@@ -157,12 +157,13 @@ display: none;
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: -50px;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+	font-style: normal;
 }
 .scrollDown {
 	font-style: italic;
 	display: block;
 	text-align: center;
-	margin-top: 0px;
 	width: 90px;
 	height: 52px;
 	margin-left: auto;
@@ -204,6 +205,7 @@ width: 100%;
 }
 #page1 {
 	min-height: 0px;
+	display: block;
 }
 .page1txt {
 }
@@ -219,7 +221,7 @@ width: 100%;
 	display: block;
 	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
 	color: #000000;
-	font-style: italic;
+	font-style: normal;
 	font-size: 13pt;
 	width: auto;
 }
