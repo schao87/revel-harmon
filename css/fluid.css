@@ -154,12 +154,14 @@ display: none;
 	height: 515px;
 	background-color: #FFFFFF;
 	display: block;
-	margin-left: auto;
-	margin-right: auto;
+	margin-left: 5%;
+	margin-right: 5%;
 	margin-top: -50px;
 	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
 	font-style: normal;
 	width: 90%;
+	position: fixed;
+	bottom: -460px;
 }
 .scrollDown {
 	font-style: italic;
