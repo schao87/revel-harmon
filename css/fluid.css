@@ -73,6 +73,7 @@ img, object, embed, video {
 .navBar {
 	background-color: #FFFFFF;
 	position: fixed;
+    z-index:1000;
 }
 .navItems {
 	margin-left: 4.6153%;
@@ -151,7 +152,6 @@ display: none;
 	display: block;
 }
 .page2Cont {
-	height: 515px;
 	background-color: #FFFFFF;
 	display: block;
 	margin-left: 5%;
@@ -160,8 +160,23 @@ display: none;
 	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
 	font-style: normal;
 	width: 90%;
+    position:relative;
+}
+.page2Cont2 {
 	position: fixed;
 	bottom: -460px;
+}
+.fauxScroll{
+    position:fixed;
+    width: 90%;
+    background: white;
+    height: 45px;
+    bottom: 0px;
+    margin: 0 5%;
+}
+.page2Cont .scrollDown{
+    visibility: hidden;
+    display: block;
 }
 .scrollDown {
 	font-style: italic;
@@ -202,20 +217,24 @@ display: none;
 	font-style: normal;
 }
 .page2txt2 {
-	color: #000000;
-	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
-	font-size: 19.2px;
-	text-align: center;
-	margin-top: 23px;
-	font-weight: lighter;
-	line-height: 24px;
-	width: 90%;
-	padding-left: 5%;
-	padding-right: 5%;
+    color: #000000;
+    font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+    font-size: 19.2px;
+    text-align: center;
+    margin-top: 23px;
+    font-weight: lighter;
+    line-height: 24px;
+    width: 90%;
+    padding-left: 5%;
+    padding-right: 5%;
+    display: block;
+}
+.noFloat {
+    float:none;
 }
 /* Tablet Layout: 481px to 768px. Inherits styles from: Mobile Layout. */
 
-@media only screen and (min-width: 481px) {
+@media only screen and (min-width: 569px) {
 
 .gridContainer {
 	width: 87.022%;
